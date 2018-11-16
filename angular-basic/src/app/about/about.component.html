@@ -58,7 +58,7 @@
     <h2>Corporate Leadership</h2>
   </div>
   <div fxFlex *ngIf="leaders">
-    <mat-list *ngFor="let leader of leaders">
+    <mat-list *ngFor="let leader of leaders"  [@expand]>
       <div fxLayout="row" fxLayout.lt-sm="column">
         <div fxFlex="18">
           <img src="{{ BaseURL + leader.image }}" alt="" class="leader-img">
