@@ -61,7 +61,7 @@
     <mat-list *ngFor="let leader of leaders">
       <div fxLayout="row" fxLayout.lt-sm="column">
         <div fxFlex="18">
-          <img [src]="leader.image" alt="" class="leader-img">
+          <img src="{{ BaseURL + leader.image }}" alt="" class="leader-img">
         </div>
         <div fxFlex="82">
           <p>{{leader.name}}</p>
